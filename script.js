@@ -21,7 +21,12 @@ function plus1Away() {
   console.log(`Home Score:Away Score`, HomeScore, `:`, AwayScore);
 
   const InputElement = document.getElementById(`Away`)
-  InputElement.innerText = AwayScore
+
+  if (AwayScore < 10) {
+    InputElement.innerText = `0` + AwayScore
+  } else
+    InputElement.innerText = AwayScore
+
 }
 
 
@@ -31,8 +36,11 @@ function plus1Home() {
 
 
   const InputElement = document.getElementById(`Home`)
-  InputElement.innerText = HomeScore
 
+  if (HomeScore < 10) {
+    InputElement.innerText = `0` + HomeScore
+  } else
+    InputElement.innerText = HomeScore
 
 }
 
@@ -41,7 +49,11 @@ function plus3Home() {
   console.log(`Home Score:Away Score`, HomeScore, `:`, AwayScore);
 
   const InputElement = document.getElementById(`Home`)
-  InputElement.innerText = HomeScore
+
+  if (HomeScore < 10) {
+    InputElement.innerText = `0` + HomeScore
+  } else
+    InputElement.innerText = HomeScore
 
 }
 
@@ -52,7 +64,7 @@ function Reset() {
 
   const InputElement1 = document.getElementById(`Home`)
   const InputElement2 = document.getElementById(`Away`)
-  InputElement1.innerText = AwayScore
-  InputElement2.innerText = HomeScore
+  InputElement1.innerText = `0` + AwayScore
+  InputElement2.innerText = `0` + HomeScore
 
 }

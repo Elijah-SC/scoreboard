@@ -26,25 +26,27 @@
       </div>
     </section>
 
-    <section class="row">
+    <section class="row justify-content-between">
       <div class="col-4">
+        <h1 class="scoreboard">HOME</h1>
         <h1 id="Home" class="scoreboard">00</h1>
       </div>
-      <div class="col-2">
-        <h1 class="scoreboard">:</h1>
+      <div class="col-2 d-flex align-items-center justify-content-around">
+        <h1 class="semi-col">:</h1>
       </div>
       <div class="col-4">
+        <h1 class="scoreboard">AWAY</h1>
         <h1 id="Away" class="scoreboard">00</h1>
       </div>
     </section>
 
-    <section class="row">
-      <div class="col-5">
+    <section class="row justify-content-between">
+      <div class="col-5 d-flex justify-content-around">
         <button onclick="plus1Home()" class="btn btn-outline-light">+1 Home</button>
         <button onclick="plus3Home()" class="btn btn-outline-light">+3 Home</button>
       </div>
 
-      <div class="col-5">
+      <div class="col-5 d-flex justify-content-around">
         <button onclick="plus1Away()" class="btn btn-outline-light">+1 Away</button>
         <button onclick="plus3Away()" class="btn btn-outline-light">+3 Away</button>
       </div>

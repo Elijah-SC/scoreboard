@@ -1,7 +1,15 @@
 .scoreboard {
   font-size: 100px;
   color: white;
+  text-align: center;
 }
+
+.semi-col {
+  font-size: 200px;
+  color: white;
+  text-align: center;
+}
+
 
 body {
   background-color: rgb(9, 7, 82);
